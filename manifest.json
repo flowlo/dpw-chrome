@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Gehaltszettel",
+	"version": "0.0.1",
+	"description": "Fixes the online Gehaltszettel for use with Chrome.",
+	"permissions": ["https://webportal.deloitte.at/dpw/scripts/webextern.wsc/*", "webRequest", "webRequestBlocking"],
+	"content_scripts" : [{
+		"matches" : [ "https://webportal.deloitte.at/dpw/scripts/webextern.wsc/a-0000.htm"],
+		"js" : ["inject.js"]
+	}],
+	"background": {
+		"scripts": ["background.js"]
+	}
+}
