@@ -11,7 +11,7 @@ if (form) {
 		l.disabled = false;
 		l.style.cursor = 'pointer';
 		l.style.backgroundImage = 'url(\'/v8pweb_webext/proc/v8d/images/btn_login.png\')';
-		l.addEventListener('click', function() { form.submit() } );
+		l.addEventListener('click', function() { form.submit(); } );
 
 		var p = document.createElement('p');
 		p.style.lineHeight = '1.5em';
