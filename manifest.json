@@ -10,5 +10,9 @@
 	}],
 	"background": {
 		"scripts": ["background.js"]
+	},
+	"icons": {
+		"64": "logo-64.png",
+		"128": "logo-128.png"
 	}
 }
